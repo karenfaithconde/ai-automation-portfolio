@@ -10,6 +10,7 @@ I'm currently available for freelance projects and internships.
 ## Projects
 
 ### 01 — Lead Capture Automation
-Automatically captures Google Form submissions and saves them 
-to Google Sheets in real time — no manual data entry needed.
+Captures Google Form submissions, saves them to Google Sheets, 
+and sends an automatic personalized confirmation email — 
+no manual work needed.
 [View project](./01-lead-capture/README.md)
