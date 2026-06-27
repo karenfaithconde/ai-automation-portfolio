@@ -1,11 +1,15 @@
 # AI Automation Portfolio
 
-Hi! I'm an IT student learning AI automation and building 
-projects to develop my skills. This portfolio contains 
-automations I've built using Make.com, n8n, and AI tools — 
-each one solving an actual business problem.
+Hi, I'm Karen — an IT student currently learning AI 
+automation while working toward a career in cybersecurity.
 
-I'm currently available for freelance projects and internships.
+I started this portfolio to document the projects I build 
+as I learn. Each one solves a real business problem and 
+includes my notes on what I learned and what I struggled 
+with along the way.
+
+Still learning, but improving every day.
+Available for freelance projects and internships.
 
 ## Projects
 
