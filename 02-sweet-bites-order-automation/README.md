@@ -38,6 +38,7 @@ written by a bot in a rush.
 
 ## Files in this repo
 - `blueprint.json` — the actual Make.com automation file
+- `canvas2-screenshot.png` - all 3 modules connected in Make
 - `form-screenshot.png` — Google Form with 4 fields
 - `googleSheet-screenshot.png` — Google Sheet with order data
 - `confirmationEmail-screenshot.png` — confirmation email sent automatically
