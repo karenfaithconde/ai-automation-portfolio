@@ -28,8 +28,8 @@ every customer — no manual work needed.
 ### 03 — High Value Lead Filter
 Captures project inquiries, saves all leads to Google 
 Sheets, and automatically routes them based on budget — 
-high value leads trigger a priority alert, low value 
-leads receive a polite acknowledgement.
+high value leads trigger a priority alert, low value leads 
+receive a polite acknowledgement.
 [View project](./03-high-value-lead-filter/README.md)
 
 ### 04 — AI Lead Qualifier
@@ -37,3 +37,10 @@ Uses Groq AI to read project descriptions and automatically
 route leads — web design inquiries get a priority alert, 
 irrelevant leads get a polite rejection.
 [View project](./04-ai-lead-qualifier/README.md)
+
+### 05 — Instant Lead Capture (Webhook Version)
+Upgrades the original lead capture automation to use 
+instant webhooks instead of scheduled polling — leads are 
+captured and confirmed in real time, with automatic retry 
+if the email fails.
+[View project](./05-instant-lead-capture/README.md)
