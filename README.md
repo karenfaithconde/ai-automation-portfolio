@@ -31,3 +31,9 @@ Sheets, and automatically routes them based on budget —
 high value leads trigger a priority alert, low value 
 leads receive a polite acknowledgement.
 [View project](./03-high-value-lead-filter/README.md)
+
+### 04 — AI Lead Qualifier
+Uses Groq AI to read project descriptions and automatically 
+route leads — web design inquiries get a priority alert, 
+irrelevant leads get a polite rejection.
+[View project](./04-ai-lead-qualifier/README.md)
