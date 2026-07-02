@@ -26,4 +26,16 @@ This project took me noticeably longer than the others — it was my first time 
 
 **Stripe CLI login kept timing out.** The normal `stripe login` command opens a browser to confirm, but it kept saying "exceeded max attempts" before I could click confirm. I fixed it by logging in directly with my API key instead: `stripe login --api-key sk_test_...`
 
-**The customer's email came back empty.** Test payments from the CLI don't always include a receipt email, so my Gmail "To" field kept failing with a missing value error. I fixed this using
+**The customer's email came back empty.** Test payments from the CLI don't always include a receipt email, so my Gmail "To" field kept failing with a missing value error. I fixed this using Make's `ifempty()` function, which falls back to a default email if the real one is missing. In a real payment, Stripe always includes the customer's actual email, so this fallback would rarely even trigger.
+
+**The Name field was blank.** I had mapped it to `Object: Customer`, but that's just an internal Stripe customer ID, not an actual name. I had to dig into the Stripe data structure to find the right field — `Object → Shipping → Name` — and remap it.
+
+**The amount was wrong by 100x.** Stripe sends payment amounts in cents, not dollars. My Airtable was showing $2,000.00 for what was actually a $20 test payment. I had to manually add `/ 100` to the mapping to convert it correctly — and I made this same mistake twice, once in Airtable and again in the Gmail email body, before catching both.
+
+Setting up a webhook-based integration with a real payment provider was a completely different experience from my earlier form-based projects. Debugging Stripe's data structure took patience, but understanding how payment data flows through an automation is a skill I know real clients will pay for.
+
+## Files in this repo
+- `blueprint.json` — Make.com automation file
+- `canvas-screenshot.png` — all 3 modules connected in Make
+- `airtable-screenshot.png` — Airtable CRM with a captured client record
+- `email-screenshot.png` — welcome email sent automatically after payment
